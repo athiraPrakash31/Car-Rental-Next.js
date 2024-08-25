@@ -1,8 +1,53 @@
 .searchBackground {
   padding: 0 40px;
   position: relative;
+  display: flex;
+
+}
+
+.smallButtonContainer {
+  position: relative;
+  width: 0px;
+}
+
+.smallButton {
+  position: absolute;
+  top: 35px;
+  right: -40px;
+  width: 40px;
+  overflow: hidden;
+}
 
 
+
+.smallButton img {
+  height: 55px;
+  width: 40px;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+
+}
+
+.contact img:first-child {
+  height: 80px;
+  width: 40px;
+  z-index: 1;
+}
+
+.contact img:last-child {
+  width: 35px;
+  height: 30px;
+  top: 21px;
+  position: absolute;
+  z-index: 5;
+  left: 5px;
+}
+
+.contact img {
+  margin: 0;
 }
 
 .image {
@@ -17,7 +62,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .breadcrumb ul {
@@ -76,6 +120,7 @@
   border: none;
   width: 150px;
   margin-right: 10px;
+  border-radius: 20px;
 }
 
 .input[type="text"] {
@@ -190,5 +235,14 @@
   .arrange img {
     height: 60px;
     width: 130px;
+  }
+  .arrange p {
+    width: 80%;
+    text-align: center;
+  }
+
+  .smallButton {
+    top: 20px;
+    right: -20px;
   }
 }
