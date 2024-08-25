@@ -1,0 +1,40 @@
+.destinations {
+    background-color: black;
+    color: #fff;
+    margin: 0 40px;
+}
+
+.locations {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.destinations ul {
+    list-style: none;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.divider {
+    height: 30px;
+    width: 1px;
+    background-color: #fff;
+    margin-left: 100px;
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+
+    .locations {
+        text-align: start;
+        padding: 20px;
+    }
+
+    .destinations ul {
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

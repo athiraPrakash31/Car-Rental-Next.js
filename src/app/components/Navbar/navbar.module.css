@@ -1,0 +1,17 @@
+
+.socialIcons {
+    display: block;
+}
+.socialIcons ul {
+    padding:15px 40px 0px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+    .socialIcons {
+        display: none;
+    }
+}

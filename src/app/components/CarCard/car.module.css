@@ -1,0 +1,203 @@
+
+.heading h2 {
+    font-size: 34.74px;
+    font-weight: 400;
+    line-height: 52.11px;
+    text-align: center;
+    margin: 41px;
+
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.card {
+    border: 1px groove rgb(221, 218, 218);
+    display: flex;
+
+}
+
+.card img {
+    object-fit: fill;
+    width: 360px;
+
+
+}
+.card .col1{
+    height: 100%;
+}
+.card .col {
+    width: 450px;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: start;
+    margin-left: 30px;
+}
+
+.card .content h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+
+}
+
+.card .content p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.5px;
+    text-align: left;
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    height: 19px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.icons .icon1,
+.icons .icon2,
+.icons .icon3,
+.icons .icon4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+.icons img {
+    width: 20px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.icons span.features {
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    line-height: 25px;
+    text-align: left;
+
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.booking p {
+    font-weight: bold !important;
+    font-size: large !important;
+}
+
+.booking button {
+    border: none;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    background: #df0a0a;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.booking button:hover {
+    background: #c00909;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+    .cards {
+        padding: 0px 15px;
+     
+        }
+ 
+    .card {    
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card .col{
+        width: 100%;
+    }
+    .card .content {
+       
+        margin-left: 0px;
+        display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+
+    .card .content h2 {
+        font-size: medium;
+    }
+
+    .card .content p {
+        width: 250px;
+    }
+
+    .card .booking {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        align-items: flex-start;
+    }
+
+    .content .icons {
+
+        display: flex;
+        overflow: hidden;
+        /* Hide overflow content */
+        white-space: nowrap;
+        /* Prevent line breaks */
+        text-overflow: ellipsis;
+        /* Show ellipsis (...) for overflow */
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .content .icons .icon1,
+    .content .icons .icon2,
+    .content .icons .icon3,
+    .content .icons .icon4 {
+        flex-shrink: 0;
+        /* Prevent shrinking of icons */
+        margin-right: 10px;
+        /* Adjust spacing between icons */
+    }
+
+    .content .icons::after {
+        content: '...';
+        position: absolute;
+        right: 0;
+        background-color: white;
+        padding-left: 10px;
+        display: inline-block;
+        line-height: 1;
+    }
+}

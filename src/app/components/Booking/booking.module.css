@@ -1,0 +1,173 @@
+.book {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+    .book {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .button button {
+        height: 35px;
+        width: 48%;
+    }
+
+    .button button:hover {
+        cursor: pointer;
+    }
+
+    .car {
+        color: #fff;
+        background-color: #e21e26;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .quick {
+        color: #e21e26;
+        background-color: #fff;
+        border: 1px solid #e21e26;
+        border-radius: 5px;
+    }
+
+    .menu {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .menu ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .menu button {
+        background: none;
+        border: none;
+        color: #000;
+        text-decoration: none;
+        font: inherit;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+
+    .menu button:hover {
+        text-decoration: underline;
+    }
+    .link {
+        background: none;
+        border: none;
+        color: #000;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      
+      .link:hover {
+        text-decoration: none;
+      }
+      
+      .dropdownLink {
+        background: none;
+        border: none;
+        color: #333;
+        text-align: left;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+      }
+      
+      .dropdownLink:hover {
+        background-color: #f0f0f0;
+      }
+    .dropdownMenu {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 80%;
+        transform: translateX(-50%);
+        align-items: center;
+        gap: 5px;
+        width: 150px;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .dropdownMenu button {
+        color: #333;
+        text-decoration: none;
+        padding: 5px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdownMenu button:hover {
+        background-color: #f0f0f0;
+    }
+
+    .inputs {
+        padding: 20px 20px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .input {
+        padding: 15px;
+        background-color: rgb(227, 250, 250);
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .input[type="text"] {
+        background-image: url("../../../../public/Images/location.svg");
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+    }
+
+    .input[type="datetime-local"] {
+        background-image: url("../../../../public/Images/calender.svg");
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+    }
+
+    .datetimewrapper {
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #datetime-input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-left: 40px;
+        width: 100%; /* Ensure datetime inputs are full width */
+    }
+}

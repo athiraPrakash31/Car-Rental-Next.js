@@ -1,0 +1,87 @@
+.rentHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 20px;
+
+}
+
+.rentHeading h2 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+}
+
+.rentBox {
+ text-align: center;
+align-items: center;
+}
+
+
+
+.rentBox h3 {
+    color: red;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.card {
+    padding: 20px;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.card p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.card img {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+    .rentHeading {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .rentHeading h2 {
+        font-size: 20px;
+
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 100px;
+        flex-wrap: nowrap;
+    }
+    .rentBox {
+        margin-bottom: 20px;
+    }
+
+    .card{
+        align-items: center;
+    }
+    .card p {
+        font-size: 0.9rem;
+    }
+}

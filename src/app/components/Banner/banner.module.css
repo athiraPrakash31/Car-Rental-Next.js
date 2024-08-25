@@ -1,0 +1,53 @@
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+
+}
+.image{
+    object-fit: contain;
+    width: 100%;
+}
+
+.bannerText {
+    position: absolute;
+    top: 60%;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerButton {
+    background-color: #009046;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px){
+ 
+    .banner{
+        padding: 0;
+    }
+    .image{
+        object-fit: cover;
+        width: 100%;
+    }
+   
+}
