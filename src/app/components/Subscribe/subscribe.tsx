@@ -14,7 +14,7 @@ export const Subscribe =()=>{
                     <input className={styles.inputField} type="text" placeholder="Name"/>
                     <input className={styles.inputField} type="email" placeholder="Email"/>
                 </div>
-                <p>Don't miss out! enter your email and your name, then hit subscribe to unlock a world of special
+                <p>Don&apos;t miss out! enter your email and your name, then hit subscribe to unlock a world of special
                     offers and details.</p>
                 <button>Subscribe</button>
             </div>
