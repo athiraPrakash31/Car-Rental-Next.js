@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import styles from "./subscribe.module.css";
 import Image from "next/image";
 import GoogleStore from "../../../../public/Images/goole-play-white.svg";
@@ -34,13 +34,14 @@ export const Subscribe = () => {
 
   // Handle input changes for name and email
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
     setErrors({
       ...errors,
-      [e.target.name]: "",
+      [name]: "",
     });
   };
 
@@ -108,30 +109,28 @@ export const Subscribe = () => {
       <div className={styles.col}>
         <h3>Subscribe here for exclusive offers and updates!</h3>
         <div className={styles.inputBox}>
-            <div className={styles.inputWrapper}>
-
-          <input
-            className={styles.inputField}
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          {errors.name && <div className={styles.error}>{errors.name}</div>}
-            </div>
-            <div className={styles.inputWrapper}>
-
-          <input
-            className={styles.inputField}
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          {errors.email && <div className={styles.error}>{errors.email}</div>}
-            </div>
+          <div className={styles.inputWrapper}>
+            <input
+              className={styles.inputField}
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            {errors.name && <div className={styles.error}>{errors.name}</div>}
+          </div>
+          <div className={styles.inputWrapper}>
+            <input
+              className={styles.inputField}
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && <div className={styles.error}>{errors.email}</div>}
+          </div>
         </div>
         <p>
           Don&apos;t miss out! Enter your email and your name, then hit
@@ -196,6 +195,3 @@ export const Subscribe = () => {
     </div>
   );
 };
-
-
-
