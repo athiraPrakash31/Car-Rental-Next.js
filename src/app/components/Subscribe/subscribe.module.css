@@ -24,8 +24,24 @@
 
 }
 
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputWrapper .error {
+    color:red;
+    
+    margin-top: 5px;
+    font-size: 12px;
+}
+.errorphone {
+    color: #fff;
+}
 .subscription .inputBox {
     display: flex;
+    justify-content: space-between;
     gap: 15px;
 }
 
@@ -51,7 +67,7 @@
 
 .subscription .inputBox input {
     height: 35px;
-    width: 200px;
+    width: 250px;
     border: none;
     background-color: rgb(244, 250, 250);
 }
